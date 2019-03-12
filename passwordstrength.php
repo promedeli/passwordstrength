@@ -23,7 +23,7 @@ class Passwordstrength extends Module
         $this->adminContent = '';
 
         $this->tab = 'front_office_features';
-        $this->version = '2.0.1';
+        $this->version = '3.0.0';
         $this->author = 'Promedeli';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = ['min' => '1.6', 'max' => _PS_VERSION_];
