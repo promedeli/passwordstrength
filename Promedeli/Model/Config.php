@@ -123,7 +123,7 @@ class Config
         $this->setParam($name, $value);
     }
 
-    public function setStorage(ConfigStorage $storage): void
+    public function setStorage(ConfigStorage $storage)
     {
         $this->storage = $storage;
     }

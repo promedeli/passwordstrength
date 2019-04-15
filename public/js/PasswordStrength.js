@@ -14,9 +14,11 @@ class PasswordStrength {
     }
 
     init() {
-        this.passwordField.addEventListener('input', this.updateMeterAndText.bind(this));
         let container = document.getElementById('meter');
-        this.passwordField.parentNode.parentNode.appendChild(container);
+        if(this.passwordField && container) {
+            this.passwordField.addEventListener('input', this.updateMeterAndText.bind(this));
+            this.passwordField.parentNode.parentNode.appendChild(container);
+        }
     }
 
     getScore() {
